@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+:root {
+    --background-color: #1E1E1E;
+    --background: #35393C;
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --eclipse-1-color: #F65E5F;
+    --eclipse-2-color: #E3BD53;
+    --eclipse-3-color: #5EBD4A;
+    --button-color: #004b23;
+
+    --font-family-inter: 'inter', sans-serif;
+    --font-family-epilogue: 'Epilogue', sans-serif;
+    --font-family-montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 390px;
+    height: 1129px;
+
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.window {
+    width: 390px;
+    height: auto;
+    margin-top: 66px;
+    border-radius: 20px;
+
+    background-color: var(--background);
+    color: var(--primary-color);
+
+}
+
+.pop-up {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.eclipse1 {
+    color: var(--eclipse-1-color);
+}
+
+.eclipse2 {
+    color: var(--eclipse-2-color);
+}
+
+.eclipse3 {
+    color: var(--eclipse-3-color);
+}
+
+.window h1 {
+    font-family: var(--font-family-montserrat);
+    font-weight: 400;
+    font-size: 30px;
+
+    text-align: center;
+    width: 277px;
+    height: 102px;
+    margin: 0 3.25rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#weatherForm {
+    width: 18rem;
+    height: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3.25rem 1.5rem;
+}
+
+input {
+    width: 285px;
+    height: 35px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+
+    font-family: var(--font-family-epilogue);
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+button {
+    width: 285px;
+    height: 35px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+
+    font-family: var(--font-family-epilogue);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--button-color);   
+}
+
+.hide {
+    display: none;
+}
+
+#temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#temp  h2 {
+    font-family: var(--font-family-montserrat);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#temp i {
+    padding: 1.5rem 0;
+}
+
+#temp p {
+    font-family: var(--font-family-montserrat);
+    font-weight: 700;
+    font-size: 20px;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    width: 200px;
+    height: 48px;
+}

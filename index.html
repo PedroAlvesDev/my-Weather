@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/2be6686047.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="window">
+        <ul class="pop-up">
+            <li class="eclipse1"><i class="fa-solid fa-circle"></i></li>
+            <li class="eclipse2"><i class="fa-solid fa-circle"></i></li>
+            <li class="eclipse3"><i class="fa-solid fa-circle"></i></li>
+        </ul>
+        <h1>Consulte a temperatura de uma cidade!</h1>
+        
+        <form id="weatherForm">
+            <input type="text" name="city" required>
+            <button type="submit" id="searchButton">Search</button>
+        </form>
+
+        <div id="temp" class="hide">
+            <h2 id="city"></h2>
+            <img src="" alt="" id="iconCode">
+            <p id="humidity"></p>
+            <p id="description"></p>
+            <p id="temperature"></p>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

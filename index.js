@@ -6,15 +6,16 @@ const iconCode = document.querySelector("#iconCode");
 const humidity = document.querySelector("#humidity");
 const weatherTemp = document.querySelector("#temp");
 
+let inputText = document.querySelector('input');
+
 weatherForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const city = event.target[0].value;
     searchWeather(city);
-
 });
 
 async function searchWeather(city) {
-    const appKey = '';
+    const appKey = 'c70c7d03b7c8987f1ff2bc7914984873';
     const lang = 'pt_br';
     const units = 'metric';
     const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appKey}&lang=${lang}&units=${units}`)
@@ -29,4 +30,8 @@ function showWeather(weatherData) {
     iconCode.src = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
     humidity.innerText = `${weatherData.main.humidity} %`;
     weatherTemp.classList.remove("hide");
+
+    inputText.value = '';
+    inputText.focus();
 };
+

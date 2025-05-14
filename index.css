@@ -67,8 +67,8 @@ ul {
 
 .window h1 {
     font-family: var(--font-family-montserrat);
-    font-weight: 400;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 20px;
 
     text-align: center;
     width: 277px;
@@ -110,10 +110,11 @@ button {
     border-radius: 10px;
 
     font-family: var(--font-family-epilogue);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
     color: var(--primary-color);
     background-color: var(--button-color);   
+    cursor: pointer;
 }
 
 .hide {

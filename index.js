@@ -34,4 +34,3 @@ function showWeather(weatherData) {
     inputText.value = '';
     inputText.focus();
 };
-

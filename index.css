@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
 
 :root {
-    --background-color: #1E1E1E;
-    --background: #35393C;
+    --background-color: #1B1B1B;
+    --background: #364238;
     --primary-color: #FFFFFF;
     --secondary-color: #000000;
     --eclipse-1-color: #F65E5F;
     --eclipse-2-color: #E3BD53;
     --eclipse-3-color: #5EBD4A;
-    --button-color: #004b23;
+    --input-background-color: #C1D1CF;
+    --text-input-color: #101211;
+    --button-color: #135E3D;
 
     --font-family-inter: 'inter', sans-serif;
     --font-family-epilogue: 'Epilogue', sans-serif;
@@ -90,7 +92,7 @@ ul {
 }
 
 input {
-    width: 285px;
+    width: fit-content;
     height: 35px;
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
@@ -100,12 +102,14 @@ input {
     font-weight: 500;
     font-size: 1.25rem;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--text-input-color);
+    background-color: var(--input-background-color);
 }
 
 button {
-    width: 285px;
+    width: fit-content;
     height: 35px;
+    padding: 8px 40px;
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
 
@@ -133,10 +137,6 @@ button {
     font-size: 20px;
 }
 
-#temp i {
-    padding: 1.5rem 0;
-}
-
 #temp p {
     font-family: var(--font-family-montserrat);
     font-weight: 700;
@@ -146,5 +146,10 @@ button {
     text-transform: capitalize;
 
     width: 200px;
-    height: 48px;
+    padding: 8px 0;
+}
+
+#humidity img {
+    width: 20px;
+    height: 20px;
 }
